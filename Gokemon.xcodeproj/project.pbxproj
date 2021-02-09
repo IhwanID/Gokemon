@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		609E77F225C9562100FF9C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F125C9562100FF9C2D /* AppDelegate.swift */; };
+		609E77F425C9562100FF9C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F325C9562100FF9C2D /* SceneDelegate.swift */; };
+		609E77F625C9562100FF9C2D /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F525C9562100FF9C2D /* HomeTableViewController.swift */; };
+		609E77F925C9562100FF9C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609E77F725C9562100FF9C2D /* Main.storyboard */; };
+		609E77FB25C9562300FF9C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609E77FA25C9562300FF9C2D /* Assets.xcassets */; };
+		609E77FE25C9562300FF9C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609E77FC25C9562300FF9C2D /* LaunchScreen.storyboard */; };
+		609E780925C9562300FF9C2D /* GokemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E780825C9562300FF9C2D /* GokemonTests.swift */; };
+		609E781425C9562300FF9C2D /* GokemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E781325C9562300FF9C2D /* GokemonUITests.swift */; };
+		609E782A25C95A9F00FF9C2D /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E782925C95A9F00FF9C2D /* Pokemon.swift */; };
+		609E783225C95AF400FF9C2D /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E783125C95AF400FF9C2D /* PokemonResponse.swift */; };
+		609E783725C95C9800FF9C2D /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E783625C95C9800FF9C2D /* RemoteDataSource.swift */; };
+		609E784225C9808F00FF9C2D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E784125C9808F00FF9C2D /* HomePresenter.swift */; };
+		609E784725C9809F00FF9C2D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E784625C9809F00FF9C2D /* HomeRouter.swift */; };
+		609E784C25C981AB00FF9C2D /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E784B25C981AB00FF9C2D /* PokemonRepository.swift */; };
+		609E785225C9854200FF9C2D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E785125C9854200FF9C2D /* HomeInteractor.swift */; };
+		609E785825C986DE00FF9C2D /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E785725C986DE00FF9C2D /* Injection.swift */; };
+		609E786C25CA473D00FF9C2D /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E786B25CA473D00FF9C2D /* PokemonTableViewCell.swift */; };
+		609E787225CA649D00FF9C2D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 609E787125CA649D00FF9C2D /* RealmSwift */; };
+		609E787725CA64EB00FF9C2D /* PokemonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E787625CA64EB00FF9C2D /* PokemonEntity.swift */; };
+		609E787C25CA654700FF9C2D /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E787B25CA654700FF9C2D /* LocalDataSource.swift */; };
+		609E788A25CAA05A00FF9C2D /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E788925CAA05A00FF9C2D /* Ext.swift */; };
+		609E789225CAA0AB00FF9C2D /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E789125CAA0AB00FF9C2D /* PokemonMapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		609E780525C9562300FF9C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609E77E625C9562100FF9C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609E77ED25C9562100FF9C2D;
+			remoteInfo = Gokemon;
+		};
+		609E781025C9562300FF9C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609E77E625C9562100FF9C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609E77ED25C9562100FF9C2D;
+			remoteInfo = Gokemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		609E77EE25C9562100FF9C2D /* Gokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		609E77F125C9562100FF9C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		609E77F325C9562100FF9C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		609E77F525C9562100FF9C2D /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		609E77F825C9562100FF9C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		609E77FA25C9562300FF9C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		609E77FD25C9562300FF9C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		609E77FF25C9562300FF9C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609E780425C9562300FF9C2D /* GokemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609E780825C9562300FF9C2D /* GokemonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonTests.swift; sourceTree = "<group>"; };
+		609E780A25C9562300FF9C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609E780F25C9562300FF9C2D /* GokemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609E781325C9562300FF9C2D /* GokemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokemonUITests.swift; sourceTree = "<group>"; };
+		609E781525C9562300FF9C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609E782925C95A9F00FF9C2D /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		609E783125C95AF400FF9C2D /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		609E783625C95C9800FF9C2D /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		609E784125C9808F00FF9C2D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		609E784625C9809F00FF9C2D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		609E784B25C981AB00FF9C2D /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
+		609E785125C9854200FF9C2D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		609E785725C986DE00FF9C2D /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		609E786B25CA473D00FF9C2D /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		609E787625CA64EB00FF9C2D /* PokemonEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonEntity.swift; sourceTree = "<group>"; };
+		609E787B25CA654700FF9C2D /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		609E788925CAA05A00FF9C2D /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
+		609E789125CAA0AB00FF9C2D /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		609E77EB25C9562100FF9C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E787225CA649D00FF9C2D /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780125C9562300FF9C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780C25C9562300FF9C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		609E77E525C9562100FF9C2D = {
+			isa = PBXGroup;
+			children = (
+				609E77F025C9562100FF9C2D /* Gokemon */,
+				609E780725C9562300FF9C2D /* GokemonTests */,
+				609E781225C9562300FF9C2D /* GokemonUITests */,
+				609E77EF25C9562100FF9C2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		609E77EF25C9562100FF9C2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				609E77EE25C9562100FF9C2D /* Gokemon.app */,
+				609E780425C9562300FF9C2D /* GokemonTests.xctest */,
+				609E780F25C9562300FF9C2D /* GokemonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		609E77F025C9562100FF9C2D /* Gokemon */ = {
+			isa = PBXGroup;
+			children = (
+				609E788825CAA02E00FF9C2D /* Util */,
+				609E785625C986D100FF9C2D /* DI */,
+				609E783B25C97EAD00FF9C2D /* Module */,
+				609E782725C95A7700FF9C2D /* Domain */,
+				609E782425C9593D00FF9C2D /* Data */,
+				609E77F125C9562100FF9C2D /* AppDelegate.swift */,
+				609E77F325C9562100FF9C2D /* SceneDelegate.swift */,
+				609E77F725C9562100FF9C2D /* Main.storyboard */,
+				609E77FA25C9562300FF9C2D /* Assets.xcassets */,
+				609E77FC25C9562300FF9C2D /* LaunchScreen.storyboard */,
+				609E77FF25C9562300FF9C2D /* Info.plist */,
+			);
+			path = Gokemon;
+			sourceTree = "<group>";
+		};
+		609E780725C9562300FF9C2D /* GokemonTests */ = {
+			isa = PBXGroup;
+			children = (
+				609E780825C9562300FF9C2D /* GokemonTests.swift */,
+				609E780A25C9562300FF9C2D /* Info.plist */,
+			);
+			path = GokemonTests;
+			sourceTree = "<group>";
+		};
+		609E781225C9562300FF9C2D /* GokemonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				609E781325C9562300FF9C2D /* GokemonUITests.swift */,
+				609E781525C9562300FF9C2D /* Info.plist */,
+			);
+			path = GokemonUITests;
+			sourceTree = "<group>";
+		};
+		609E782425C9593D00FF9C2D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				609E782625C95A1900FF9C2D /* Remote */,
+				609E782525C95A1000FF9C2D /* Local */,
+				609E784B25C981AB00FF9C2D /* PokemonRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		609E782525C95A1000FF9C2D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				609E787625CA64EB00FF9C2D /* PokemonEntity.swift */,
+				609E787B25CA654700FF9C2D /* LocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		609E782625C95A1900FF9C2D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				609E783125C95AF400FF9C2D /* PokemonResponse.swift */,
+				609E783625C95C9800FF9C2D /* RemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		609E782725C95A7700FF9C2D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				609E785025C9852500FF9C2D /* UseCase */,
+				609E782825C95A9000FF9C2D /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		609E782825C95A9000FF9C2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				609E782925C95A9F00FF9C2D /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		609E783B25C97EAD00FF9C2D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				609E785F25CA454800FF9C2D /* Detail */,
+				609E783C25C97EB500FF9C2D /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		609E783C25C97EB500FF9C2D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				609E784025C97EED00FF9C2D /* View */,
+				609E783F25C97ED700FF9C2D /* Presenter */,
+				609E783E25C97EC600FF9C2D /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		609E783E25C97EC600FF9C2D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				609E784625C9809F00FF9C2D /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		609E783F25C97ED700FF9C2D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				609E784125C9808F00FF9C2D /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		609E784025C97EED00FF9C2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				609E77F525C9562100FF9C2D /* HomeTableViewController.swift */,
+				609E786B25CA473D00FF9C2D /* PokemonTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		609E785025C9852500FF9C2D /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				609E785125C9854200FF9C2D /* HomeInteractor.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		609E785625C986D100FF9C2D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				609E785725C986DE00FF9C2D /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		609E785F25CA454800FF9C2D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				609E788125CA9C0400FF9C2D /* Presenter */,
+				609E788025CA9BFB00FF9C2D /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		609E788025CA9BFB00FF9C2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		609E788125CA9C0400FF9C2D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		609E788825CAA02E00FF9C2D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				609E788925CAA05A00FF9C2D /* Ext.swift */,
+				609E789125CAA0AB00FF9C2D /* PokemonMapper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		609E77ED25C9562100FF9C2D /* Gokemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609E781825C9562300FF9C2D /* Build configuration list for PBXNativeTarget "Gokemon" */;
+			buildPhases = (
+				609E77EA25C9562100FF9C2D /* Sources */,
+				609E77EB25C9562100FF9C2D /* Frameworks */,
+				609E77EC25C9562100FF9C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gokemon;
+			packageProductDependencies = (
+				609E787125CA649D00FF9C2D /* RealmSwift */,
+			);
+			productName = Gokemon;
+			productReference = 609E77EE25C9562100FF9C2D /* Gokemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		609E780325C9562300FF9C2D /* GokemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609E781B25C9562300FF9C2D /* Build configuration list for PBXNativeTarget "GokemonTests" */;
+			buildPhases = (
+				609E780025C9562300FF9C2D /* Sources */,
+				609E780125C9562300FF9C2D /* Frameworks */,
+				609E780225C9562300FF9C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609E780625C9562300FF9C2D /* PBXTargetDependency */,
+			);
+			name = GokemonTests;
+			productName = GokemonTests;
+			productReference = 609E780425C9562300FF9C2D /* GokemonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		609E780E25C9562300FF9C2D /* GokemonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609E781E25C9562300FF9C2D /* Build configuration list for PBXNativeTarget "GokemonUITests" */;
+			buildPhases = (
+				609E780B25C9562300FF9C2D /* Sources */,
+				609E780C25C9562300FF9C2D /* Frameworks */,
+				609E780D25C9562300FF9C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609E781125C9562300FF9C2D /* PBXTargetDependency */,
+			);
+			name = GokemonUITests;
+			productName = GokemonUITests;
+			productReference = 609E780F25C9562300FF9C2D /* GokemonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		609E77E625C9562100FF9C2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					609E77ED25C9562100FF9C2D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					609E780325C9562300FF9C2D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 609E77ED25C9562100FF9C2D;
+					};
+					609E780E25C9562300FF9C2D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 609E77ED25C9562100FF9C2D;
+					};
+				};
+			};
+			buildConfigurationList = 609E77E925C9562100FF9C2D /* Build configuration list for PBXProject "Gokemon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 609E77E525C9562100FF9C2D;
+			packageReferences = (
+				609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = 609E77EF25C9562100FF9C2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				609E77ED25C9562100FF9C2D /* Gokemon */,
+				609E780325C9562300FF9C2D /* GokemonTests */,
+				609E780E25C9562300FF9C2D /* GokemonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		609E77EC25C9562100FF9C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E77FE25C9562300FF9C2D /* LaunchScreen.storyboard in Resources */,
+				609E77FB25C9562300FF9C2D /* Assets.xcassets in Resources */,
+				609E77F925C9562100FF9C2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780225C9562300FF9C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780D25C9562300FF9C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		609E77EA25C9562100FF9C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E784225C9808F00FF9C2D /* HomePresenter.swift in Sources */,
+				609E77F625C9562100FF9C2D /* HomeTableViewController.swift in Sources */,
+				609E785825C986DE00FF9C2D /* Injection.swift in Sources */,
+				609E782A25C95A9F00FF9C2D /* Pokemon.swift in Sources */,
+				609E785225C9854200FF9C2D /* HomeInteractor.swift in Sources */,
+				609E77F225C9562100FF9C2D /* AppDelegate.swift in Sources */,
+				609E783225C95AF400FF9C2D /* PokemonResponse.swift in Sources */,
+				609E784C25C981AB00FF9C2D /* PokemonRepository.swift in Sources */,
+				609E784725C9809F00FF9C2D /* HomeRouter.swift in Sources */,
+				609E786C25CA473D00FF9C2D /* PokemonTableViewCell.swift in Sources */,
+				609E787C25CA654700FF9C2D /* LocalDataSource.swift in Sources */,
+				609E787725CA64EB00FF9C2D /* PokemonEntity.swift in Sources */,
+				609E789225CAA0AB00FF9C2D /* PokemonMapper.swift in Sources */,
+				609E783725C95C9800FF9C2D /* RemoteDataSource.swift in Sources */,
+				609E77F425C9562100FF9C2D /* SceneDelegate.swift in Sources */,
+				609E788A25CAA05A00FF9C2D /* Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780025C9562300FF9C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E780925C9562300FF9C2D /* GokemonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609E780B25C9562300FF9C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E781425C9562300FF9C2D /* GokemonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		609E780625C9562300FF9C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609E77ED25C9562100FF9C2D /* Gokemon */;
+			targetProxy = 609E780525C9562300FF9C2D /* PBXContainerItemProxy */;
+		};
+		609E781125C9562300FF9C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609E77ED25C9562100FF9C2D /* Gokemon */;
+			targetProxy = 609E781025C9562300FF9C2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		609E77F725C9562100FF9C2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609E77F825C9562100FF9C2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		609E77FC25C9562300FF9C2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609E77FD25C9562300FF9C2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		609E781625C9562300FF9C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		609E781725C9562300FF9C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		609E781925C9562300FF9C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = Gokemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.Gokemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		609E781A25C9562300FF9C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = Gokemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.Gokemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		609E781C25C9562300FF9C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = GokemonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.GokemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokemon.app/Gokemon";
+			};
+			name = Debug;
+		};
+		609E781D25C9562300FF9C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = GokemonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.GokemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokemon.app/Gokemon";
+			};
+			name = Release;
+		};
+		609E781F25C9562300FF9C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = GokemonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.GokemonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gokemon;
+			};
+			name = Debug;
+		};
+		609E782025C9562300FF9C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				INFOPLIST_FILE = GokemonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihwan.id.GokemonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gokemon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		609E77E925C9562100FF9C2D /* Build configuration list for PBXProject "Gokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609E781625C9562300FF9C2D /* Debug */,
+				609E781725C9562300FF9C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609E781825C9562300FF9C2D /* Build configuration list for PBXNativeTarget "Gokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609E781925C9562300FF9C2D /* Debug */,
+				609E781A25C9562300FF9C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609E781B25C9562300FF9C2D /* Build configuration list for PBXNativeTarget "GokemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609E781C25C9562300FF9C2D /* Debug */,
+				609E781D25C9562300FF9C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609E781E25C9562300FF9C2D /* Build configuration list for PBXNativeTarget "GokemonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609E781F25C9562300FF9C2D /* Debug */,
+				609E782025C9562300FF9C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		609E787125CA649D00FF9C2D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 609E77E625C9562100FF9C2D /* Project object */;
+}
