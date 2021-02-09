@@ -3,4 +3,4 @@
 
 ### Screenshots
 
-![Main](Screenshots/main.png "A list of Pokemon")
+![Main](Screenshot/main.png "A list of Pokemon")
