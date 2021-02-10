@@ -47,7 +47,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
     func getPokemonListWithDetails () -> AnyPublisher<[PokemonDetailResponse], Error> {
         return getPokemonList(urlString: "https://pokeapi.co/api/v2/pokemon/")
             .map(\.results)
-            .flatMap {
+            .flatMap(maxPublishers:.max(1)) {
                 Publishers
                     .MergeMany($0.map { self.getPokemon($0.url) })
                     .collect()

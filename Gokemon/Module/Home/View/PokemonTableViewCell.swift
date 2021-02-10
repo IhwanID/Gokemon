@@ -13,16 +13,19 @@ class PokemonTableViewCell: UITableViewCell {
     @IBOutlet weak var pokemonName: UILabel!
     @IBOutlet weak var pokemonType1: UIImageView!
     @IBOutlet weak var pokemonType2: UIImageView!
+    @IBOutlet weak var pokemonId: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    func configure(pokemon: Pokemon){
+        pokemonName.text = pokemon.name.capitalizingFirstLetter()
+        let url = URL(string: "https://pokeres.bastionbot.org/images/pokemon/\(pokemon.id).png")!
+      pokemonImage.kf.setImage(with: url)
+        pokemonType1.image = UIImage(named: pokemon.type.first?.capitalized ?? "")
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        pokemonId.text = "#\(String(format: "%03d", pokemon.id))"
 
-        // Configure the view for the selected state
+        if pokemon.type.count > 1{
+            pokemonType2.image = UIImage(named: pokemon.type[1].capitalized)
+        }
     }
 
     override func prepareForReuse() {

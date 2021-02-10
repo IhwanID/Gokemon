@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		602701FB25D2D2FF0075F155 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602701FA25D2D2FF0075F155 /* DetailViewController.swift */; };
+		6027020125D3701F0075F155 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6027020025D3701F0075F155 /* Kingfisher */; };
 		609E77F225C9562100FF9C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F125C9562100FF9C2D /* AppDelegate.swift */; };
 		609E77F425C9562100FF9C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F325C9562100FF9C2D /* SceneDelegate.swift */; };
 		609E77F625C9562100FF9C2D /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E77F525C9562100FF9C2D /* HomeTableViewController.swift */; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		602701FA25D2D2FF0075F155 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		609E77EE25C9562100FF9C2D /* Gokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609E77F125C9562100FF9C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		609E77F325C9562100FF9C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6027020125D3701F0075F155 /* Kingfisher in Frameworks */,
 				609E787225CA649D00FF9C2D /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +281,7 @@
 		609E788025CA9BFB00FF9C2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				602701FA25D2D2FF0075F155 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			name = Gokemon;
 			packageProductDependencies = (
 				609E787125CA649D00FF9C2D /* RealmSwift */,
+				6027020025D3701F0075F155 /* Kingfisher */,
 			);
 			productName = Gokemon;
 			productReference = 609E77EE25C9562100FF9C2D /* Gokemon.app */;
@@ -389,6 +395,7 @@
 			mainGroup = 609E77E525C9562100FF9C2D;
 			packageReferences = (
 				609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				602701FF25D3701F0075F155 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 609E77EF25C9562100FF9C2D /* Products */;
 			projectDirPath = "";
@@ -434,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				609E784225C9808F00FF9C2D /* HomePresenter.swift in Sources */,
+				602701FB25D2D2FF0075F155 /* DetailViewController.swift in Sources */,
 				609E77F625C9562100FF9C2D /* HomeTableViewController.swift in Sources */,
 				609E785825C986DE00FF9C2D /* Injection.swift in Sources */,
 				609E782A25C95A9F00FF9C2D /* Pokemon.swift in Sources */,
@@ -783,6 +791,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		602701FF25D3701F0075F155 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
 		609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
@@ -794,6 +810,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6027020025D3701F0075F155 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 602701FF25D3701F0075F155 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		609E787125CA649D00FF9C2D /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 609E787025CA649D00FF9C2D /* XCRemoteSwiftPackageReference "realm-cocoa" */;

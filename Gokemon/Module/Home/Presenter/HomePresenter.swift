@@ -30,7 +30,7 @@ class HomePresenter{
                 break
             }
         }, receiveValue: { pokemons in
-            self.pokemons = pokemons
+            self.pokemons = pokemons.sorted(by: { $0.id < $1.id })
 
         })
         .store(in: &cancellables)
