@@ -16,4 +16,4 @@ Done:
 TODO: 
 - [ ] Handling error when there is no internet connection, or got error from API
 - [ ] Having unit test 
-- [ ] Research more about API. 
+- [ ] Research more about API to get stast & evolution. and also i can't find any description of pokemon. 
